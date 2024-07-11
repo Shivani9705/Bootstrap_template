@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <button type="button" class="btn btn-primary" id="liveToastBtn">Show live toast</button>
+
+  <div class="container">
+    <h2 class="py-3 text-center">Bootstrap 5</h2>
+    <div class="row py-5">
+      <div class="col">
+        <div class="toast" id="liveToast">
+          <div class="toast-header">
+            <img src="logo.png" width="20px" alt="">
+            <b class="ms-auto">Bootstrap Toast</b>
+            <button class="close" data-dismiss="toast">
+              <span>&times;</span>
+            </button>
+          </div>
+          <div class="toast-body">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio fuga, modi voluptates voluptas recusandae
+              eveniet. Beatae quas sed mollitia sequi.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <button type="button" class="btn btn-primary" id="liveToastBtn">Show live toast</button>
+
+  <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
+    <div id="liveToast" class="toast hide" role="alert" aria-live="assertive" aria-atomic="true">
+      <div class="toast-header">
+        <img src="..." class="rounded me-2" alt="...">
+        <strong class="me-auto">Bootstrap</strong>
+        <small>11 mins ago</small>
+        <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+      </div>
+      <div class="toast-body">
+        Hello, world! This is a toast message.
+      </div>
+    </div>
+  </div>
+  <button type="button" class="btn btn-primary" data-bs-toggle="tooltip" title="Hooray!">Hover over me!</button>
+  <button type="button" class="btn btn-primary" data-bs-toggle="popover" title="Popover Header"
+    data-bs-content="Some content inside the popover">Toggle popover</button>
+
+
+</body>
+
+</html>
